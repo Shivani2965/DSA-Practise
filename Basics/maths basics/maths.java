@@ -6,10 +6,11 @@ public class maths {
 
         System.out.print("Enter a number:");
         int n = sc.nextInt();
-        countDigits(n);
-        reverseNumber(n);
-        palindrome(n);
-        armstrong(n);
+        // countDigits(n);
+        // reverseNumber(n);
+        // palindrome(n);
+        // armstrong(n);
+        printN(n);
     }
 
     static void countDigits(int n) {
@@ -63,6 +64,12 @@ public class maths {
             System.out.println(N + " Number is Armstrong");
         } else {
             System.out.println(N + " Number is not Armstrong");
+        }
+    }
+
+    static void printN(int n){
+        for(int i =1; i<=n; i++){
+            System.out.println(i);
         }
     }
 }
