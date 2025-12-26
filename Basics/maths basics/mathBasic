@@ -1,0 +1,9 @@
+class mathBasic{
+    void printNumber(int a){
+        System.out.println("The number is: " + a);
+    }
+    public static void main(String[] args) {
+        mathBasic obj = new mathBasic();
+        obj.printNumber(5);
+    }
+}
