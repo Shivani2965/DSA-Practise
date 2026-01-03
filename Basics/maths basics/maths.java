@@ -10,7 +10,11 @@ public class maths {
         // reverseNumber(n);
         // palindrome(n);
         // armstrong(n);
-        printN(n);
+        // printN(n);
+        printDivisor(n);
+        findPrime(n);
+        findFactors(n);
+        countPrimes(n);
     }
 
     static void countDigits(int n) {
@@ -50,26 +54,74 @@ public class maths {
         }
     }
 
-    static void armstrong(int n){
+    static void armstrong(int n) {
         int r = 0;
         int sum = 0;
-        int N =n;
-        while (n>0){
+        int N = n;
+        while (n > 0) {
             sum = n % 10;
-            r = r + (sum  * sum * sum);
+            r = r + (sum * sum * sum);
             n = n / 10;
         }
 
-        if (N == r){
+        if (N == r) {
             System.out.println(N + " Number is Armstrong");
         } else {
             System.out.println(N + " Number is not Armstrong");
         }
     }
 
-    static void printN(int n){
-        for(int i =1; i<=n; i++){
+    static void printN(int n) {
+        for (int i = 1; i <= n; i++) {
             System.out.println(i);
         }
+    }
+
+    static void printDivisor(int n) {
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+
+    static void findPrime(int n) {
+        int count = 0;
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                count++;
+
+            }
+
+        }
+        if (count == 2) {
+            System.out.println("\n" + n + " is a prime number");
+        } else {
+            System.out.println("\n" + n + " is not a prime number");
+        }
+    }
+
+    static void findFactors(int n) {
+        for (int i = 1; i * i <= n; i++) {
+            if (n % i == 0) {
+                System.out.println(i);
+
+            }
+            if ((n / i) != i) {
+                System.out.println(n / i);
+            }
+        }
+    }
+
+    public static void countPrimes(int n) {
+        int count=0;
+
+        for (int i=2 ; i*i<=n;i++){
+            if (n%i==0){
+                count++;
+            }
+            
+        }
+        System.out.println(count);
     }
 }
