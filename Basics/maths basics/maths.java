@@ -11,9 +11,9 @@ public class maths {
         // palindrome(n);
         // armstrong(n);
         // printN(n);
-        printDivisor(n);
-        findPrime(n);
-        findFactors(n);
+        // printDivisor(n);
+        // findPrime(n);
+        // findFactors(n);
         countPrimes(n);
     }
 
@@ -116,12 +116,16 @@ public class maths {
     public static void countPrimes(int n) {
         int count=0;
 
-        for (int i=2 ; i*i<=n;i++){
+        for (int i=1 ; i<=n;i++){
             if (n%i==0){
+                System.out.println(i);
                 count++;
             }
             
         }
         System.out.println(count);
+
+
+        
     }
 }
