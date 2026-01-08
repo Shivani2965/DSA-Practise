@@ -1,11 +1,12 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class maths {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a number:");
-        int n = sc.nextInt();
+        // System.out.print("Enter a number:");
+        // int n = sc.nextInt();
         // countDigits(n);
         // reverseNumber(n);
         // palindrome(n);
@@ -14,7 +15,10 @@ public class maths {
         // printDivisor(n);
         // findPrime(n);
         // findFactors(n);
-        countPrimes(n);
+        // countPrimes(n);
+        findHcf(9, 12 );
+        findHcf(54, 24);
+        eclodianHcf(54,24);
     }
 
     static void countDigits(int n) {
@@ -127,5 +131,24 @@ public class maths {
 
 
         
+    }
+
+    static void findHcf(int a, int b){
+        for (int i=1; i<=(Math.min(a,b)); i++){
+            if (a%i==0 && b%i==0){
+                System.out.println(i);
+            }
+        }
+    }
+
+    static void eclodianHcf(int a, int b){
+        while (a!=b){
+            if (a>b){
+                a=a-b;
+            } else {
+                b=b-a;
+            }
+        }
+        System.out.println(a);
     }
 }
