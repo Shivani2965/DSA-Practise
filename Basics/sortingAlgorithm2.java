@@ -69,19 +69,7 @@ public class SortingAlgorithms2 {
 
     /* ================= HEAP SORT ================= */
 
-    static void heapSort(int[] arr) {
-        int n = arr.length;
-
-        // Build max heap
-        for (int i = n / 2 - 1; i >= 0; i--)
-            heapify(arr, n, i);
-
-        // Extract elements
-        for (int i = n - 1; i > 0; i--) {
-            swap(arr, 0, i);
-            heapify(arr, i, 0);
-        }
-    }
+    
 
     static void heapify(int[] arr, int n, int i) {
         int largest = i;
@@ -122,7 +110,5 @@ public class SortingAlgorithms2 {
         quickSort(arr2, 0, arr2.length - 1);
         System.out.println("Quick Sort: " + Arrays.toString(arr2));
 
-        heapSort(arr3);
-        System.out.println("Heap Sort: " + Arrays.toString(arr3));
-    }
+        }
 }
