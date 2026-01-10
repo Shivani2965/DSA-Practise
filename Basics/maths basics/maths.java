@@ -1,5 +1,5 @@
-import java.util.Scanner;
-import java.lang.Math;
+// // import java.util.Scanner;
+// import java.lang.Math;
 
 public class maths {
     public static void main(String[] args) {
@@ -16,8 +16,8 @@ public class maths {
         // findPrime(n);
         // findFactors(n);
         // countPrimes(n);
-        findHcf(9, 12 );
-        findHcf(54, 24);
+        // findHcf(9, 12 );
+        // findHcf(54, 24);
         eclodianHcf(54,24);
     }
 
@@ -142,13 +142,19 @@ public class maths {
     }
 
     static void eclodianHcf(int a, int b){
-        while (a!=b){
+        while (a>0 && b>0){
             if (a>b){
-                a=a-b;
-            } else {
-                b=b-a;
+                a = a%b;
+            }
+            else{
+                b = b%a;
             }
         }
-        System.out.println(a);
+        if (a==0){
+            System.out.println(b);
+        }
+        else{
+            System.out.println(a);
+        }
     }
 }
