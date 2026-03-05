@@ -77,10 +77,10 @@ class solution {
     // palindrome of string ignoring punchutuation and spaces
 
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        // Scanner s = new Scanner(System.in);
 
-        System.out.println("Enter n:");
-        int x = s.nextInt();
+        // System.out.println("Enter n:");
+        // int x = s.nextInt();
 
         // System.out.println(fib(n));
         System.out.println(isPalindrome1(x));
