@@ -72,17 +72,105 @@ class solution {
         return left;
     }
 
+    public static void moveZeros(int[] arr) {
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != 0) {
+                arr[count] = arr[i];
+                count++;
+            }
+        }
+        while (count < arr.length) {
+            arr[count] = 0;
+            count++;
+        }
+        System.out.print("After moving zeros: ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
 
 
     // palindrome of string ignoring punchutuation and spaces
+
+
+
+
+    //6 march
+    //intteger to roman
+    public static String intToRoman(int num) {
+        String[] m = {"", "M", "MM", "MMM"};
+        String[] c = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+        String[] x = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+        String[] i = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+        return m[num / 1000] + c[(num % 1000) / 100] + x[(num % 100) / 10] + i[num % 10];
+    }
+
+    // roman to integer
+    public static int romanToInt(String s) {
+        int sum = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == 'I') {
+                sum += 1;
+            } else if (c == 'V') {
+                sum += 5;
+            } else if (c == 'X') {
+                sum += 10;
+            } else if (c == 'L') {
+                sum += 50;
+            } else if (c == 'C') {
+                sum += 100;
+            } else if (c == 'D') {
+                sum += 500;
+            } else if (c == 'M') {
+                sum += 1000;
+            }
+        }
+        return sum;
+    }
+
+
+    public String multiply(String num1, String num2) {
+        int n1 = Integer.parseInt(num1);
+        int n2 = Integer.parseInt(num2);
+        int ans= n1*n2;
+        return String.valueOf(ans);
+    }
+
+    public int[] plusOne(int[] digits) {
+        
+        for (int i = digits.length - 1; i >= 0; i--) {
+            if (digits[i] < 9) {
+                digits[i]++;
+                return digits;
+            }
+            digits[i] = 0;
+        }
+        int[] newNumber = new int[digits.length + 1];
+        newNumber[0] = 1;
+        return newNumber;
+    }
+
 
     public static void main(String[] args) {
         // Scanner s = new Scanner(System.in);
 
         // System.out.println("Enter n:");
-        // int x = s.nextInt();
+        // int n = s.nextInt();
 
-        // System.out.println(fib(n));
-        System.out.println(isPalindrome1(x));
+        // // System.out.println(fib(n));
+        // System.out.println(isPalindrome1(x));
+
+        // moveZeros(new int[]{0, 1, 0, 3, 12});
+        // System.out.println(intToRoman(n));
+        // // System.out.println(romanToInt("IV"));
+        // System.out.println(new solution().multiply("123", "456"));
+            int[] digits = {1, 2, 3};
+            int[] result = new solution().plusOne(digits);
+            System.out.print("Result: ");
+            for (int digit : result) {
+                System.out.print(digit + " ");
+            }
     }
 }
