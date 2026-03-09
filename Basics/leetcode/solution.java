@@ -152,6 +152,14 @@ class solution {
         return newNumber;
     }
 
+    //08/03/2026
+
+    public static void lengthOfLastWord( String s){
+        String[] words = s.trim().split(" ");
+        int length = words[words.length - 1].length();
+        System.out.println("Length of the last word: " + length);
+    }
+
 
     public static void main(String[] args) {
         // Scanner s = new Scanner(System.in);
