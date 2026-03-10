@@ -160,6 +160,23 @@ class solution {
         System.out.println("Length of the last word: " + length);
     }
 
+    //10/03/2026
+    public static void RemoveDuplicatesFromSortedArray(int[] arr){
+        int count = 0;
+        for (int i = 0; i < arr.length-1; i++) {
+            if (arr[i] != arr[i+1]) {
+                arr[count] = arr[i];
+                count++;
+            }
+        }
+        arr[count] = arr[arr.length-1];
+        count++;
+        System.out.print("After removing duplicates: ");
+        for (int i = 0; i < count; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+
 
     public static void main(String[] args) {
         // Scanner s = new Scanner(System.in);
@@ -174,11 +191,8 @@ class solution {
         // System.out.println(intToRoman(n));
         // // System.out.println(romanToInt("IV"));
         // System.out.println(new solution().multiply("123", "456"));
-            int[] digits = {1, 2, 3};
-            int[] result = new solution().plusOne(digits);
-            System.out.print("Result: ");
-            for (int digit : result) {
-                System.out.print(digit + " ");
-            }
+            // 
+            
+        RemoveDuplicatesFromSortedArray(new int[]{1, 1, 2, 2, 3, 4, 4, 5});
     }
 }
