@@ -176,6 +176,11 @@ class solution {
             System.out.print(arr[i] + " ");
         }
     }
+     public static int bitwiseComplement(int n) {
+        if (n == 0) return 1;
+        int mask = (1 << (32 - Integer.numberOfLeadingZeros(n))) - 1;
+        return n ^ mask;
+    }
 
 
     public static void main(String[] args) {
@@ -191,8 +196,9 @@ class solution {
         // System.out.println(intToRoman(n));
         // // System.out.println(romanToInt("IV"));
         // System.out.println(new solution().multiply("123", "456"));
-            // 
+        //     // 
             
-        RemoveDuplicatesFromSortedArray(new int[]{1, 1, 2, 2, 3, 4, 4, 5});
+        // RemoveDuplicatesFromSortedArray(new int[]{1, 1, 2, 2, 3, 4, 4, 5});
+        bitwiseComplement(10);
     }
 }
