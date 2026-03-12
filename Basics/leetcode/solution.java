@@ -182,6 +182,19 @@ class solution {
         return n ^ mask;
     }
 
+    public static int lengthOfLastWord1(String s) {
+        int length = 0;
+        for (int i = s.length() - 1; i >= 0; i--) {
+            if (s.charAt(i) == ' ') {
+                if (length > 0) {
+                    break;
+                }
+            } else {
+                length++;
+            }
+        }
+        return length;
+    }
 
     public static void main(String[] args) {
         // Scanner s = new Scanner(System.in);
@@ -199,6 +212,7 @@ class solution {
         //     // 
             
         // RemoveDuplicatesFromSortedArray(new int[]{1, 1, 2, 2, 3, 4, 4, 5});
-        bitwiseComplement(10);
+        // bitwiseComplement(10);
+        lengthOfLastWord("Hello World");
     }
 }
