@@ -195,6 +195,66 @@ class solution {
         }
         return length;
     }
+    //32/03/2026
+    //two sums problm hashmap pattern
+    public static int[] twoSum(int[] nums, int target){
+        int[] arr = new int[2];
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                int sum = nums[i] + nums[j];
+                if (sum == target) {
+                    arr[0] = i;
+                    arr[1] = j;
+                    
+                }
+            }
+        }
+        return arr;
+    }
+//optimal solution
+    public static int[] moveZeros1(int[] arr){
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != 0) {
+                arr[count] = arr[i];
+                count++;
+            }
+        }
+        while (count < arr.length) {
+            arr[count] = 0;
+            count++;
+        }
+        return arr;
+    }
+
+    //bruteforce solution
+    public static int[] moveZero(int[] nums){
+        for(int i=0; i<nums.length; i++){
+            for (int j=i+1; j<nums.length; j++){
+                if(nums[i] == 0 && nums[j] != 0){
+                    int temp = nums[i];
+                    nums[i] = nums[j];
+                    nums[j] = temp;
+                }
+            } 
+        }
+        return nums;
+    }
+
+    //2pointer approach
+    public static int[] moveZero2(int[] nums){
+        int l=0;
+        for (int r=0; r<nums.length; r++){
+            if(nums[r] !=0){
+                int temp = nums[l];
+                nums[l] = nums[r];
+                nums[r] = temp;
+                l++;
+            }
+        }
+        return nums;
+        }
+
 
     public static void main(String[] args) {
         // Scanner s = new Scanner(System.in);
@@ -213,6 +273,26 @@ class solution {
             
         // RemoveDuplicatesFromSortedArray(new int[]{1, 1, 2, 2, 3, 4, 4, 5});
         // bitwiseComplement(10);
-        lengthOfLastWord("Hello World");
+        // lengthOfLastWord("Hello World");
+        // twoSum(new int[]{2, 7, 11, 15}, 9);
+        int result[]=moveZeros1(new int[]{0, 1, 0, 3, 12});
+        System.out.print("After moving zeros: ");
+        for (int i = 0; i < result.length; i++) {
+            System.out.print(result[i] + " ");
+        }
+
+        int result1[]=moveZero(new int[]{0, 1, 0, 3, 12});
+        System.out.print("After moving zeros: ");   
+        for (int i = 0; i < result1.length; i++) {
+            System.out.print(result1[i] + " ");
+        }
+
+        int result2[]=moveZero2(new int[]{0, 1, 0, 3, 12});
+        System.out.print("After moving zeros: ");
+        for (int i = 0; i < result2.length; i++) {
+            System.out.print(result2[i] + " ");
+        }
+
+
     }
 }
