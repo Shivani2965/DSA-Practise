@@ -256,6 +256,19 @@ class solution {
         }
 
 
+        //02/04/2026
+        public static void majorityelement(int[] nums){
+            for(int i = 0; i< nums.length; i++){
+                for(int j=i+1; j<nums.length;j++){
+                    if(nums[i] == nums[j]){
+                        System.out.println("Majority element: " + nums[i]);
+                        return;
+                    }
+                }
+            }
+        }
+
+
     public static void main(String[] args) {
         // Scanner s = new Scanner(System.in);
 
@@ -275,23 +288,25 @@ class solution {
         // bitwiseComplement(10);
         // lengthOfLastWord("Hello World");
         // twoSum(new int[]{2, 7, 11, 15}, 9);
-        int result[]=moveZeros1(new int[]{0, 1, 0, 3, 12});
-        System.out.print("After moving zeros: ");
-        for (int i = 0; i < result.length; i++) {
-            System.out.print(result[i] + " ");
-        }
+        // int result[]=moveZeros1(new int[]{0, 1, 0, 3, 12});
+        // System.out.print("After moving zeros: ");
+        // for (int i = 0; i < result.length; i++) {
+        //     System.out.print(result[i] + " ");
+        // }
 
-        int result1[]=moveZero(new int[]{0, 1, 0, 3, 12});
-        System.out.print("After moving zeros: ");   
-        for (int i = 0; i < result1.length; i++) {
-            System.out.print(result1[i] + " ");
-        }
+        // int result1[]=moveZero(new int[]{0, 1, 0, 3, 12});
+        // System.out.print("After moving zeros: ");   
+        // for (int i = 0; i < result1.length; i++) {
+        //     System.out.print(result1[i] + " ");
+        // }
 
-        int result2[]=moveZero2(new int[]{0, 1, 0, 3, 12});
-        System.out.print("After moving zeros: ");
-        for (int i = 0; i < result2.length; i++) {
-            System.out.print(result2[i] + " ");
-        }
+        // int result2[]=moveZero2(new int[]{0, 1, 0, 3, 12});
+        // System.out.print("After moving zeros: ");
+        // for (int i = 0; i < result2.length; i++) {
+        //     System.out.print(result2[i] + " ");
+        // 
+        majorityelement(new int[]{2, 2, 1, 1, 1, 2, 2});
+        
 
 
     }
