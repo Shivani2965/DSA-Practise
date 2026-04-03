@@ -326,7 +326,10 @@ class solution {
         // for (int i = 0; i < result2.length; i++) {
         //     System.out.print(result2[i] + " ");
         // 
-        majorityelement(new int[]{2, 2, 1, 1, 1, 2, 2});
+        System.out.println(climbStaird(5));
+        System.out.println(climbStairs1(5));
+
+
         
 
 
