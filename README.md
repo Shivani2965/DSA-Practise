@@ -5,13 +5,14 @@
 
 ![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)
 
+## 📊 GitHub Activity
+
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Shivani2965&show_icons=true&theme=github_dark" />
 </p>
 
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/USERNAME/USERNAME/output/github-contribution-grid-snake.svg" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shivani2965&theme=github-dark-blue" />
 </p>
 
 <!---LeetCode Topics Start-->
