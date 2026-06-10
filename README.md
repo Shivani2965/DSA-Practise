@@ -7,8 +7,9 @@
 
 ## 📊 GitHub Activity
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Shivani2965&show_icons=true&theme=github_dark)
-
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Shivani2965&show_icons=true&theme=github_dark" />
+</p>
 
 <!---LeetCode Topics Start-->
 # LeetCode Topics
