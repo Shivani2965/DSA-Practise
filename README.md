@@ -23,6 +23,7 @@
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Shivani2965/DSA-Practise/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0171-excel-sheet-column-number](https://github.com/Shivani2965/DSA-Practise/tree/master/0171-excel-sheet-column-number) |
 ## Sliding Window
 |  |
 | ------- |
@@ -34,6 +35,7 @@
 ## Math
 |  |
 | ------- |
+| [0171-excel-sheet-column-number](https://github.com/Shivani2965/DSA-Practise/tree/master/0171-excel-sheet-column-number) |
 | [0202-happy-number](https://github.com/Shivani2965/DSA-Practise/tree/master/0202-happy-number) |
 | [3591-check-if-any-element-has-prime-frequency](https://github.com/Shivani2965/DSA-Practise/tree/master/3591-check-if-any-element-has-prime-frequency) |
 ## Counting
