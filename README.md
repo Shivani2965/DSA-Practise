@@ -31,6 +31,7 @@
 ## Array
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/Shivani2965/DSA-Practise/tree/master/0075-sort-colors) |
 | [3591-check-if-any-element-has-prime-frequency](https://github.com/Shivani2965/DSA-Practise/tree/master/3591-check-if-any-element-has-prime-frequency) |
 ## Math
 |  |
@@ -49,5 +50,10 @@
 ## Two Pointers
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/Shivani2965/DSA-Practise/tree/master/0075-sort-colors) |
 | [0202-happy-number](https://github.com/Shivani2965/DSA-Practise/tree/master/0202-happy-number) |
+## Sorting
+|  |
+| ------- |
+| [0075-sort-colors](https://github.com/Shivani2965/DSA-Practise/tree/master/0075-sort-colors) |
 <!---LeetCode Topics End-->
