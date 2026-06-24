@@ -23,6 +23,7 @@
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Shivani2965/DSA-Practise/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0014-longest-common-prefix](https://github.com/Shivani2965/DSA-Practise/tree/master/0014-longest-common-prefix) |
 | [0171-excel-sheet-column-number](https://github.com/Shivani2965/DSA-Practise/tree/master/0171-excel-sheet-column-number) |
 ## Sliding Window
 |  |
@@ -31,6 +32,7 @@
 ## Array
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/Shivani2965/DSA-Practise/tree/master/0014-longest-common-prefix) |
 | [0075-sort-colors](https://github.com/Shivani2965/DSA-Practise/tree/master/0075-sort-colors) |
 | [3591-check-if-any-element-has-prime-frequency](https://github.com/Shivani2965/DSA-Practise/tree/master/3591-check-if-any-element-has-prime-frequency) |
 ## Math
@@ -56,4 +58,8 @@
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/Shivani2965/DSA-Practise/tree/master/0075-sort-colors) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/Shivani2965/DSA-Practise/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
