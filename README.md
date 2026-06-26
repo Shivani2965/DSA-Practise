@@ -34,6 +34,7 @@
 | ------- |
 | [0014-longest-common-prefix](https://github.com/Shivani2965/DSA-Practise/tree/master/0014-longest-common-prefix) |
 | [0015-3sum](https://github.com/Shivani2965/DSA-Practise/tree/master/0015-3sum) |
+| [0027-remove-element](https://github.com/Shivani2965/DSA-Practise/tree/master/0027-remove-element) |
 | [0075-sort-colors](https://github.com/Shivani2965/DSA-Practise/tree/master/0075-sort-colors) |
 | [3591-check-if-any-element-has-prime-frequency](https://github.com/Shivani2965/DSA-Practise/tree/master/3591-check-if-any-element-has-prime-frequency) |
 ## Math
@@ -54,6 +55,7 @@
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Shivani2965/DSA-Practise/tree/master/0015-3sum) |
+| [0027-remove-element](https://github.com/Shivani2965/DSA-Practise/tree/master/0027-remove-element) |
 | [0075-sort-colors](https://github.com/Shivani2965/DSA-Practise/tree/master/0075-sort-colors) |
 | [0202-happy-number](https://github.com/Shivani2965/DSA-Practise/tree/master/0202-happy-number) |
 ## Sorting
